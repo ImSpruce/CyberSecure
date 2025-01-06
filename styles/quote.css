@@ -1,0 +1,54 @@
+
+/* Quote row - - - Angela Merkel */
+.quote-row {
+  margin-top: 15vh;
+  display: flex;
+  height: 30vh;
+  background-color: rgb(59, 135, 156);
+  padding: 3vh;
+}
+
+.quote-container-image {
+  margin-left: 20vw;
+}
+
+.quote-image {
+  margin-top: -10vh;
+  height: 30vh;
+  width: 30vh;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.who {
+  margin: 10px;
+}
+
+.quote-container-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  font-weight: 600;
+}
+
+.upper-quotation-mark,
+.lower-quotation-mark {
+  display: inline;
+  font-size: 60px;
+}
+
+.quote {
+  font-size: 40px;
+}
+
+.lower-quotation-mark {
+  text-align: right;
+}

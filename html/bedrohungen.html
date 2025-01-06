@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Dont Dox me please" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  <title>Cyber Security - Startseite</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;
+    1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/general.css" />
+  <link rel="stylesheet" href="../styles/threats.css" />
+
+
+</head>
+
+<body>
+  <div class="header">
+    <a href="./index.html">
+      <div class="top-right">
+        <img class="top-right-image" src="../images/favicon.ico">
+        <div class="top-right-text">
+          Cyber Secure
+        </div>
+      </div>
+    </a>
+
+
+    <div class="top-left">
+      <a href="./grundlagen.html">Grundlagen</a> <!-- Links für Seiten Einfügen-->
+      <a id="current-page" href="./bedrohungen.html">Bedrohungen</a>
+      <a href="./be-safe.html">So können sie sich Schützen</a>
+      <a href="./kontakt.html">Kontakt</a>
+      <a href="./more.html">Weitere Quellen</a>
+    </div>
+  </div>
+
+  <img class="top-background-image" src="../images/TIG_background_nobar.jpg" />
+
+  <div class="container-A">
+    <p class="title-A">
+      Häufige Bedrohungen
+    </p>
+    <p class="text-A">
+      Im Internet gibt es Vielfältige Gefahren, die Ihre Sicherheit bedrohen.
+    </p>
+    <p class="text-A">
+      Hier sind einige der Gängigsten gefahren aufgeführt:
+    </p>
+  </div>
+  <!-- Nice to have -> Infinite Scroll mit Java Script implementiren -->
+  <div class="horizontal-scroll-container">
+    <div class="horizontal-scroll">
+      <div class="card">
+        <div class="card-title">Phishing</div>
+        <div class="card-text">
+          Phishing bezeichnet den Versuch,
+          vertrauliche Informationen wie Passwörter oder
+          Bankdaten durch gefälschte E-Mails oder Websites zu stehlen.
+        </div>
+        <div class="measures">
+          <div class="measures-title">Abwehrmaßnahmen:</div>
+          <ul>
+            <li>Überprüfen Sie die Absenderadresse und achten Sie auf verdächtige Rechtschreibfehler.</li>
+            <li>Klicken Sie niemals auf Links in verdächtigen E-Mails.</li>
+            <li>Aktivieren Sie Spam-Filter in Ihrem E-Mail-Postfach.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Ransomware</div>
+        <div class="card-text">
+          Ransomware blockiert den Zugriff auf Ihre Daten oder Systeme und fordert ein Lösegeld,
+          um diese wieder freizugeben.
+        </div>
+        <div class="measures">
+          <div class="measures-title">Abwehrmaßnahmen:</div>
+          <ul>
+            <li>Erstellen Sie regelmäßige Backups Ihrer Daten.</li>
+            <li>Halten Sie Ihr Betriebssystem und Ihre Software auf dem neuesten Stand.</li>
+            <li>Vermeiden Sie das Öffnen unbekannter Anhänge oder Links.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Man-in-the-Middle Angriff</div>
+        <div class="card-text">
+          Bei einem MitM-Angriff schleusen sich Hacker in die Kommunikation zwischen zwei Parteien ein,
+          um Daten abzufangen oder zu manipulieren.
+        </div>
+        <div class="measures">
+          <div class="measures-title">Abwehrmaßnahmen:</div>
+          <ul>
+            <li>Nutzen Sie immer HTTPS-verschlüsselte Verbindungen.</li>
+            <li>Verwenden Sie ein virtuelles privates Netzwerk (VPN) in öffentlichen WLANs.</li>
+            <li>Vermeiden Sie die Eingabe sensibler Daten in unsicheren Netzwerken.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Social Engeneering</div>
+        <div class="card-text">
+          Social Engineering nutzt psychologische Manipulation, um Menschen dazu zu bringen,
+          vertrauliche Informationen preiszugeben.
+        </div>
+        <div class="measures">
+          <div class="measures-title">Abwehrmaßnahmen:</div>
+          <ul>
+            <li>Seien Sie misstrauisch gegenüber unaufgeforderten Anfragen nach Informationen.</li>
+            <li>Schulen Sie sich und Ihr Team im Erkennen von Social-Engineering-Techniken.</li>
+            <li>Nutzen Sie strenge Authentifizierungsprozesse.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Doxing</div>
+        <div class="card-text">
+          Beim Doxing werden persönliche Daten online veröffentlicht,
+          oft mit dem Ziel, jemanden zu belästigen oder zu bedrohen.
+        </div>
+        <div class="measures">
+          <div class="measures-title">Abwehrmaßnahmen:</div>
+          <ul>
+            <li>Teilen Sie so wenige persönliche Informationen wie möglich online.</li>
+            <li>Nutzen Sie Pseudonyme in sozialen Netzwerken.</li>
+            <li>Prüfen Sie regelmäßig Ihre Datenschutzeinstellungen.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Passwort-Angriffe</div>
+        <div class="card-text">
+          Hacker versuchen, Passwörter zu knacken, um auf Konten zuzugreifen.
+          Techniken wie Brute-Force-Angriffe oder Wörterbuchangriffe werden häufig genutzt.
+        </div>
+        <div class="measures">
+          <div class="measures-title">Abwehrmaßnahmen:</div>
+          <ul>
+            <li>Verwenden Sie starke und einzigartige Passwörter. </li>
+            <li>Aktivieren Sie Zwei-Faktor-Authentifizierung (2FA).</li>
+            <li>Ändern Sie Passwörter regelmäßig.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Fade -->
+    <div class="before"></div>
+    <div class="after"></div>
+  </div>
+
+  <div class="container-A">
+    <div class="container-B">
+      <div class="title-B">Terms &amp; Conditions Game</div>
+      <div class="text-B">
+        Um zu Illustriren wie viele Angriffe durch komplizirten Satzbau versuchen sie in die Irre zu führen können sie
+        <a href="https://www.termsandconditions.game/">HIER</a> auf spielerische Weise versuchen alles abzulehnen.
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div>&copy; 2025 Cyber Secure. <a class="disclaimer" href="../html/impressum.html">Impressum/Disclaimer</a></div>
+      
+      <div class="title-B disclaimer">Disclaimer</div>
+      <div class="text-B">
+        Diese Website wurde im Rahmen eines Schulprojekts erstellt und dient ausschließlich zu Demonstrations- und
+        Lernzwecken. Alle Inhalte sind rein informativ und stellen weder eine rechtliche Beratung noch eine verbindliche
+        Informationsquelle dar. Für professionelle Beratung wenden Sie sich bitte an qualifizierte Experten.
+        Für Vollständigen Disclaimer siehe &gt; <a class="disclaimer" href="../html/impressum.html">Impressum/Disclaimer</a> &lt;
+      </div>
+      <br>
+      <div class="text-B literatur-link"><a href="../html/literatur.html">Literaturanganben</a></div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

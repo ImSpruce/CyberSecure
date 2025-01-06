@@ -1,0 +1,54 @@
+.header {
+  height: 14vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+#current-page {
+  text-decoration: underline;
+}
+
+
+
+/* Header Right - - - Logo and Name - - - - - - - - - - - - - !!! Links Rechts Schwäche kickt rein  ( :^( ) */
+.top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5vh;
+}
+
+.top-right-image {
+  height: 8vh;
+}
+
+.top-right-text {
+  padding-left: 1vh;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/* Header left - - - navbar */
+
+.top-left {
+  margin-bottom: 2vh;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-left a {
+  font-size: 22px;
+  margin: 0 1vw;
+  text-decoration: none;
+  color: grey;
+}
