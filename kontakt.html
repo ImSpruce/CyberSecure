@@ -57,8 +57,9 @@
 
     <div class="container-B">
       <div class="contact-container">
+
         <div class="title-B">Kontakt Formular</div>
-        <form class="contact-form" action="./kontakt.html">
+        <form id="contact-form" class="contact-form" action="./kontakt.html">
           <!-- Action was / wohin soll das Form kommen -- - -- - -- - -- - -- - -- - -- - -->
           <label for="name" class="title-D">Name:</label>
           <input class="form-input" name="name" type="text" placeholder="Bitte geben Sie Ihren vollständigen Namen an"
@@ -72,10 +73,32 @@
           <input class="form-input" name="subject" type="text" placeholder="Worum geht es in Ihrer Anfrage?">
 
           <label for="message" class="title-D">Nachricht</label>
-          <textarea class="form-input" name="message" rows="5"
+          <textarea class="form-input" name="message" rows="10"
             placeholder="Beschreiben Sie Ihr Anliegen so detailliert wie möglich" maxlength="500"></textarea>
 
-          <button class="submit-button" type="submit">Nachricht Senden</button>
+          <button class="submit-button" type="submit" value="Submit">Nachricht Senden</button>
+
+          <div id="captcha" class="captcha">
+            <div class="wheresWaldo-text-container">
+              <div class="text-B wheresWaldo-text">To proof that you are human please click on Waldo:</div>
+            </div>
+            <img class="wheresWaldo-image" src="./images/WheresWaldo-2.png">
+
+            <!--
+            <button id="cancel">
+              Cancel
+            </button>
+            -->
+
+            <button class="submit-button">
+              submit
+            </button>
+
+            <button id="wrong" class="wrong-button">
+              wrong try again
+            </button>
+          </div>
+
         </form>
       </div>
 
@@ -156,13 +179,48 @@
 
   </footer>
 
+
+  <script>
+    // JavaScript to handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function () {
+      // Prevent form from submitting and page from refreshing
+      event.preventDefault();
+
+      // Display the image
+      document.getElementById('captcha').style.display = 'flex';
+    });
+
+
+    // Select the Waldo image and the buttons
+    const waldoImage = document.querySelector('.wheresWaldo-image');
+    const wrongButton = document.getElementById('wrong');
+    const submitButton = document.querySelector('.captcha button:not(#wrong)');
+
+    // Add an event listener to the image
+    waldoImage.addEventListener('click', () => {
+      // Hide the submit button and show the wrong button
+      submitButton.style.display = 'none';
+      wrongButton.style.display = 'block';
+
+
+    // Set a timeout to revert after 2 seconds
+    setTimeout(() => {
+      // Revert visibility
+      wrongButton.style.display = 'none';
+      submitButton.style.display = 'block';
+    }, 500); // 2000 milliseconds = 2 seconds
+  });
+
+    
+  </script>
+
 </body>
 
 </html>
 
 
 <!-- 
-      Kontakt-Formularfelder:
+      Kontakt-Formularfelder Nice To Have:
 
       Pflichtfeld - stern und text
       Wie viele zeichen noch übrig counter - Nachricht- wenn nicht zu schwer
