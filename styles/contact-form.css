@@ -135,7 +135,7 @@ iframe {
   margin: 0;
   margin-top: 10px;
   margin-right: 30px;
-  width: 200px;
+  width: 10vw;
   height: 40px;
   border-radius: 10px;
   border: 1px solid transparent;
@@ -161,5 +161,14 @@ iframe {
   position: absolute;
   bottom: 10px;
   right: 250px;
+}
+
+@media (max-width:1000px) {
+  .captcha .cancel-button {
+    right: 150px;
+  }
+  .captcha button {
+    width: 20vw;
+  }
 }
 
