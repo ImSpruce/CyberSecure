@@ -52,3 +52,10 @@
   text-decoration: none;
   color: grey;
 }
+
+
+@media (max-width:900px) {
+  .top-left{
+    flex-wrap: wrap;
+  }
+}

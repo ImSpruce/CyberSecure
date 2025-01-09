@@ -71,16 +71,24 @@ input {
 
 
 .contact-container-adress {
-  margin: -50px 0 20px;
+  margin: 10px 0 20px;
   display: flex;
   align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .contact-container-adress {
+    flex-direction: column;
+  }
+}
+
 .contact-container-adress-text {
   flex: 1;
+  margin-bottom: 20px;
 }
 
 iframe {
   flex: 1;
   border-radius: 10px;
+  min-height: 30vh;
 }

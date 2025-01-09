@@ -8,8 +8,16 @@
   padding: 3vh;
 }
 
+@media (max-width:900px) {
+  .quote-row {
+    flex-direction: column;
+    height: 70vh;
+  }
+}
+
 .quote-container-image {
   margin-left: 20vw;
+  height: 60vh;
 }
 
 .quote-image {
